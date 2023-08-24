@@ -27,6 +27,7 @@
                 })
                 
                 connection.on("ReceiveName", (name) => {
+                    $("#namesList").append(`<li class="list-group-item">${name}</li>`)
                     console.log(name);    
                 })
          });
@@ -41,5 +42,8 @@
         <div class="alert-info">
             Connection status: <strong id="conStatus"></strong>
         </div>
+    </div>
+    <div class="col-md offset-2">
+        <ul class="list-group" id="namesList"></ul>
     </div>
 </div>

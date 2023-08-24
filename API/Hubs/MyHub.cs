@@ -12,8 +12,8 @@ public class MyHub : Hub
         await Clients.All.SendAsync("ReceiveName", name);
     }
 
-    public async Task GetNames()
-    {
-        await Clients.All.SendAsync("ReceiveNames", Names);
-    }
+    // public async Task GetNames()
+    // {
+    //     await Clients.All.SendAsync("ReceiveNames", Names);
+    // }
 }
